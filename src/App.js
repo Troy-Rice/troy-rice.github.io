@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
+import PageButton from './PageButton.js';
 import './App.css';
+import USA from './Images/SanDiego.jpg';
+import INT from './Images/HongKong.jpg';
 
 function App() {
   return (
@@ -8,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Kuribo and Goomba <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -19,6 +22,14 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="HomeScreen">
+        <PageButton text={"USA"} 
+                    image={USA}
+        />
+        <PageButton text={"International"} 
+                    image={INT}
+        />
+      </div>
     </div>
   );
 }
